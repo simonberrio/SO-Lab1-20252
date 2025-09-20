@@ -13,3 +13,5 @@ Tercera versión: Guardar en memoria lo leído en el archivo
 <img width="1752" height="313" alt="image" src="https://github.com/user-attachments/assets/f7418e91-befe-4f51-aa5c-c11e1b102bae" />
 <img width="525" height="184" alt="image" src="https://github.com/user-attachments/assets/c99ed653-70e9-4465-94b4-a3ed78dcabc0" />
 
+Cuarte versión: Guardado en memoria dinamicamente
+<img width="2078" height="232" alt="image" src="https://github.com/user-attachments/assets/9e17ecd7-e421-48be-a918-60b8876f31b9" />

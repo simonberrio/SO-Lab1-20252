@@ -28,15 +28,18 @@ Y se volvió a ejecutar el run-tests.sh y el resultado cambió al siguiente:
 <img width="999" height="424" alt="image" src="https://github.com/user-attachments/assets/19e6f230-97ff-4beb-a6eb-ec34a26578fb" />
 De nuevo se corrigió el mensaje de error cuando los dos archivos son iguales y se volvió a correr el test
 <img width="1095" height="675" alt="image" src="https://github.com/user-attachments/assets/eded60e2-f9c5-4fcb-857e-63f2e36fdf6f" />
-Para el error del test 5 se tenía así:
-if (argc == 3 && strcmp(argv[1], argv[2]) == 0) {
-        fprintf(stderr, "El archivo de entrada y salida deben diferir\n");
-        exit(1);
-    } 
-y se dejó así:
-if (argc >= 3) {
-        if (strcmp(argv[1], argv[2]) == 0) {
-            fprintf(stderr, "reverse: input and output file must differ\n");
-            exit(1);
+Para el error del test 5, en vez de solo comparar nombres de archivo, hay que comparar el inodo y dispositivo de ambos ficheros quedando la comparación así:
+//Valido que los dos archivos sean diferentes
+    if (argc == 3) {
+        struct stat st_in, st_out;
+        if (stat(argv[1], &st_in) == 0 && stat(argv[2], &st_out) == 0) {
+            if (st_in.st_dev == st_out.st_dev && st_in.st_ino == st_out.st_ino) {
+                fprintf(stderr, "reverse: input and output file must differ\n");
+                exit(1);
+            }
         }
     }
+
+Para finalmente ejecutar el tester y lograr 
+<img width="940" height="453" alt="image" src="https://github.com/user-attachments/assets/54d71580-8fa0-4e20-9f7f-341ead37fadc" />
+

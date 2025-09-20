@@ -28,4 +28,15 @@ Y se volvió a ejecutar el run-tests.sh y el resultado cambió al siguiente:
 <img width="999" height="424" alt="image" src="https://github.com/user-attachments/assets/19e6f230-97ff-4beb-a6eb-ec34a26578fb" />
 De nuevo se corrigió el mensaje de error cuando los dos archivos son iguales y se volvió a correr el test
 <img width="1095" height="675" alt="image" src="https://github.com/user-attachments/assets/eded60e2-f9c5-4fcb-857e-63f2e36fdf6f" />
-
+Para el error del test 5 se tenía así:
+if (argc == 3 && strcmp(argv[1], argv[2]) == 0) {
+        fprintf(stderr, "El archivo de entrada y salida deben diferir\n");
+        exit(1);
+    } 
+y se dejó así:
+if (argc >= 3) {
+        if (strcmp(argv[1], argv[2]) == 0) {
+            fprintf(stderr, "reverse: input and output file must differ\n");
+            exit(1);
+        }
+    }

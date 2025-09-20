@@ -1,5 +1,3 @@
-Aqui vamos a poner todo
-
 Cada versión esta dentro de la carpeta de lab.
 Primera versión: Abrir archivo de entrada, leerlo con getline y escribirlo en consola
 <img width="974" height="153" alt="image" src="https://github.com/user-attachments/assets/73924823-54ee-46d0-8321-3473580fb4a8" />
@@ -19,3 +17,6 @@ Cuarte versión: Guardado en memoria dinamicamente
 
 Versión final: Escribiendo en sentido contrario
 <img width="1133" height="67" alt="image" src="https://github.com/user-attachments/assets/04b74957-b35f-4d71-a75d-b43853c29408" />
+
+Ya ejecutando las pruebas:
+<img width="1168" height="707" alt="image" src="https://github.com/user-attachments/assets/1c8576d0-d59f-424a-974b-58371ded6118" />

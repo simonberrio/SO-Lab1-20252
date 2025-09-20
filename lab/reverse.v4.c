@@ -53,27 +53,17 @@ int main(int argc, char *argv[]) {
     }
 
     // Abrir archivo de entrada
-    FILE *input = stdin;
-    int input_allocated = 0; // Bandera para saber si input fue abierto
-    if (argc >= 2) {
-        input = fopen(argv[1], "r");
-        if (!input) {
-            fprintf(stderr, "error: cannot open file '%s'\n", argv[1]);
-            exit(1);
-        }
-        input_allocated = 1;
+    FILE *input = fopen(argv[1], "r");
+    if (!input) {
+        fprintf(stderr, "error: cannot open file '%s'\n", argv[1]);
+        exit(1);
     }
     //Abrir archivo de salida
-    FILE *output = stdout;
-    int output_allocated = 0; // Bandera para saber si output fue abierto
-    if (argc == 3) {
-        output = fopen(argv[2], "w");
-        if (!output) {
-            fprintf(stderr, "error: cannot open file '%s'\n", argv[2]);
-            if (input_allocated) fclose(input);
-            exit(1);
-        }
-        output_allocated = 1;
+    FILE *output = fopen(argv[2], "w");
+    if (!output) {
+        fprintf(stderr, "error: cannot open file '%s'\n", argv[2]);
+        fclose(input);
+        exit(1);
     }
 
     // Declaro los punteros y variable
@@ -101,16 +91,12 @@ int main(int argc, char *argv[]) {
     free(line);
 
     //Escribimos en el archivo de salida
-    for (size_t i = lines.count; i > 0; i--) {
-        fprintf(output, "%s", lines.lines[i - 1]);
+    for (size_t i = 0; i < lines.count; i++) {
+        fprintf(output, "%s", lines.lines[i]);
     }
 
     free_lines_array(&lines);
-    if (input_allocated) {
-        fclose(input);
-    }
-    if (output_allocated) {
-        fclose(output);
-    }
+    fclose(input);
+    fclose(output);
     return 0;
 }

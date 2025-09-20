@@ -17,3 +17,6 @@ Cuarte versión: Guardado en memoria dinamicamente
 
 Versión final: Escribiendo en sentido contrario
 <img width="1133" height="67" alt="image" src="https://github.com/user-attachments/assets/04b74957-b35f-4d71-a75d-b43853c29408" />
+
+Ya ejecutando las pruebas:
+<img width="1168" height="707" alt="image" src="https://github.com/user-attachments/assets/1c8576d0-d59f-424a-974b-58371ded6118" />

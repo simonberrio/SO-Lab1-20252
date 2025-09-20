@@ -4,4 +4,7 @@ Primera versión: Abrir archivo de entrada, leerlo con getline y escribirlo en c
 <img width="974" height="153" alt="image" src="https://github.com/user-attachments/assets/73924823-54ee-46d0-8321-3473580fb4a8" />
 <img width="1107" height="285" alt="image" src="https://github.com/user-attachments/assets/33ad41ec-b094-40d4-a829-3a103efcf0d9" />
 
-Segunda versión: Leer de un archivo de entrada y escribir en archivo de salida.
+Segunda versión: Leer de un archivo de entrada y escribir en archivo de salida
+<img width="1204" height="258" alt="image" src="https://github.com/user-attachments/assets/df65e3de-c509-44dc-8113-ef8428638ff4" />
+<img width="571" height="132" alt="image" src="https://github.com/user-attachments/assets/b4742100-f0ae-4504-bdf0-619cb3d0c302" />
+

@@ -14,4 +14,8 @@ Tercera versión: Guardar en memoria lo leído en el archivo
 <img width="525" height="184" alt="image" src="https://github.com/user-attachments/assets/c99ed653-70e9-4465-94b4-a3ed78dcabc0" />
 
 Cuarte versión: Guardado en memoria dinamicamente
-<img width="2078" height="232" alt="image" src="https://github.com/user-attachments/assets/9e17ecd7-e421-48be-a918-60b8876f31b9" />
+<img width="1741" height="167" alt="image" src="https://github.com/user-attachments/assets/f170a012-0152-4993-8f4f-68affa4fc926" />
+<img width="492" height="200" alt="image" src="https://github.com/user-attachments/assets/ead6e8e0-5753-44c6-8dda-067b3e0ccc25" />
+
+Versión final: Escribiendo en sentido contrario
+<img width="1133" height="67" alt="image" src="https://github.com/user-attachments/assets/04b74957-b35f-4d71-a75d-b43853c29408" />

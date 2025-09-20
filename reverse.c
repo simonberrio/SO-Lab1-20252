@@ -47,9 +47,11 @@ int main(int argc, char *argv[]) {
 	}
 
     //Valido que los dos archivos sean diferentes
-    if (strcmp(argv[1], argv[2]) == 0) {
-        fprintf(stderr, "El archivo de entrada y salida deben diferir\n");
-        exit(1);
+    if (argc == 3) {
+        if (strcmp(argv[1], argv[2]) == 0) {
+            fprintf(stderr, "reverse: input and output file must differ\n");
+            exit(1);
+        }
     }
 
     // Abrir archivo de entrada

@@ -1,0 +1,1 @@
+./run-tests.sh: line 28:   616 Segmentation fault      (core dumped) ./reverse /no/such/file.txt

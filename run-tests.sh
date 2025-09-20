@@ -6,6 +6,7 @@ NONE='\033[0m'
 
 # run_test testdir testnumber
 run_test () {
+    echo "Running test: $testname"
     local testdir=$1
     local testnum=$2
     local verbose=$3

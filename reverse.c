@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <sys/stat.h>
 
 // Estructura para almacenar líneas
 typedef struct {
@@ -48,9 +49,12 @@ int main(int argc, char *argv[]) {
 
     //Valido que los dos archivos sean diferentes
     if (argc == 3) {
-        if (strcmp(argv[1], argv[2]) == 0) {
-            fprintf(stderr, "reverse: input and output file must differ\n");
-            exit(1);
+        struct stat st_in, st_out;
+        if (stat(argv[1], &st_in) == 0 && stat(argv[2], &st_out) == 0) {
+            if (st_in.st_dev == st_out.st_dev && st_in.st_ino == st_out.st_ino) {
+                fprintf(stderr, "reverse: input and output file must differ\n");
+                exit(1);
+            }
         }
     }
 

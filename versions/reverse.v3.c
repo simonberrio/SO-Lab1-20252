@@ -30,7 +30,7 @@ int main(int argc, char *argv[]) {
     }
 
     // Reservamos un array fijo para almacenar punteros a líneas
-    const size_t MAX_LINES = 10;
+    const size_t MAX_LINES = 1000;
     char *lines[MAX_LINES];
     size_t count = 0;
 

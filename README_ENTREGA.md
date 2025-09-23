@@ -1,6 +1,7 @@
 En este laboratorio trabajamos:
 - Simón Berrio
 - Leon Mateo Velez
+-Link demo tecnica: https://youtu.be/2X4BS1sbUOQ
 
 
 Cada versión esta dentro de la carpeta de versions.
